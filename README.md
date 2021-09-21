@@ -1,6 +1,17 @@
-# Using MongoDB - MongoShell
+# Using MongoDB
 
-## Commands used in this project
+## Mongo Shell
+
+### CRUD Commands 
 
 * [Creating and reading back data](https://github.com/Code-Institute-Solutions/MongoDB/blob/master/02-ManipulateDataUsingMongoShell/01-create_and_read_back_data/mongoCommands.md#gitpod)
-* [Updating and Deleting Data] (https://github.com/Code-Institute-Solutions/MongoDB/blob/master/02-ManipulateDataUsingMongoShell/02-update_and_delete_data/mongoCommands.md)
+* [Updating and Deleting Data](https://github.com/Code-Institute-Solutions/MongoDB/blob/master/02-ManipulateDataUsingMongoShell/02-update_and_delete_data/mongoCommands.md)
+
+---
+
+## Running Mongo Commands From A Python File
+
+### Dependancies
+
+* [dnspython](https://www.dnspython.org/)
+* [pymongo](https://pymongo.readthedocs.io/en/stable/)
