@@ -21,6 +21,17 @@ conn = mongo_connect(MONGO_URI)
 
 coll = conn[DATABASE][COLLECTION]
 
+new_doc = {"first": "douglas", 
+            "last": "adams", 
+            "dob": "11/03/1952", 
+            "gender": "m", 
+            "hair_color": "grey", 
+            "occupation": "writer", 
+            "nationality": "british"
+            }
+
+coll.insert(new_doc)
+
 documents = coll.find()
 
 for doc in documents:
