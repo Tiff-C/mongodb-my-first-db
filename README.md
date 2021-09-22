@@ -11,7 +11,15 @@
 
 ## Running Mongo Commands From A Python File
 
+Testing out running MONGO CRUD commands from a python file
+
 ### Dependancies
 
 * [dnspython](https://www.dnspython.org/)
 * [pymongo](https://pymongo.readthedocs.io/en/stable/)
+
+---
+
+## Manipulate Data With A Custom User Interface
+
+Creating a simple UI that will allow users to carry out CRUD Commands
