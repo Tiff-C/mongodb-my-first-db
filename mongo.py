@@ -21,18 +21,61 @@ conn = mongo_connect(MONGO_URI)
 
 coll = conn[DATABASE][COLLECTION]
 
-new_doc = {"first": "douglas", 
-            "last": "adams", 
-            "dob": "11/03/1952", 
-            "gender": "m", 
-            "hair_color": "grey", 
-            "occupation": "writer", 
-            "nationality": "british"
-            }
+'''Insert one document'''
+# new_doc = {
+#    "first": "douglas", 
+#   "last": "adams", 
+#    "dob": "11/03/1952", 
+#    "gender": "m", 
+#    "hair_color": "grey", 
+#    "occupation": "writer", 
+#    "nationality": "british"
+#    }
 
-coll.insert(new_doc)
+# coll.insert(new_doc)
 
-documents = coll.find()
+'''Insert multiple docs'''
+#new_docs = [{
+#     "first": "terry",
+#     "last": "pratchett",
+#     "dob": "28/04/1948",
+#     "gender": "m",
+#     "hair_color": "not much",
+#     "occupation": "writer",
+#     "nationality": "british"
+# }, {
+#     "first": "george",
+#     "last": "rr martin",
+#     "dob": "20/09/1948",
+#     "gender": "m",
+#     "hair_color": "white",
+#     "occupation": "writer",
+#     "nationality": "american"
+# }]
+
+# coll.insert_many(new_docs)
+
+'''Find docs with first name "Douglas"'''
+# documents = coll.find({"first": "douglas"})
+
+''' Delete docs with first name 'douglas' '''
+# coll.remove({"first": "douglas"})
+
+""" Update a single document (first one only) """
+# coll.update_one(
+#     {"nationality": "american"},
+#     {"$set": {"hair_color": "maroon"}}
+# )
+# documents = coll.find({"nationality": "american"})
+
+""" Update all documents """
+#coll.update_many(
+#     {"nationality": "american"},
+#     {"$set": {"hair_color": "maroon"}}
+# )
+# documents = coll.find({"nationality": "american"})
+
+# documents = coll.find()
 
 for doc in documents:
     print(doc)
